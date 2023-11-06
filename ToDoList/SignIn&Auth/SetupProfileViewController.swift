@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SetupProfileViewController: UIViewController {
 
@@ -23,6 +24,17 @@ class SetupProfileViewController: UIViewController {
     let gotToListButton = UIButton(title: "Go To Your List", titleColor: .white, backgroundColor: .darkColor(), isShadow: true, cornerRadius: 6)
 
     let fullImageView = AddPhotoView()
+    
+    private let currentUser: User
+    
+    init(currentUser: User) {
+        self.currentUser = currentUser
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -64,6 +64,16 @@ extension UIViewController {
         let menuBarItem = UIBarButtonItem(customView: button)
         return menuBarItem
     }
+    
+    func showAlert(with title: String, and message: String, completion: @escaping () -> Void = { }) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            completion()
+        }
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+
 
 }
 

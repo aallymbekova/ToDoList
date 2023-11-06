@@ -44,8 +44,19 @@ class SignInViewController: UIViewController {
     }
     
     @objc private func signInButtonTapped() {
-        print(#function)
-    }
+        AuthService.shared.register(email: emailTextField.text,
+                                    password: passwordTextField.text,
+                                    confirmPassword: confirmPasswordTextField.text) { result in
+            switch result {
+            case .success(let user):
+                self.showAlert(with: "Successfully", and: "You are registered") {
+                    self.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+                }
+                
+            case .failure(let error):
+                self.showAlert(with: "Error", and: error.localizedDescription)
+            }
+        }    }
     
     @objc private func loginButtonTapped() {
         dismiss(animated: true) {

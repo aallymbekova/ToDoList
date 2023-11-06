@@ -30,6 +30,8 @@ import UIKit
          return button
      }()
      
+     weak var delegate: AuthNavigationDelegate?
+     
      override func viewDidLoad() {
          super.viewDidLoad()
 
@@ -48,7 +50,9 @@ import UIKit
      }
      
      @objc private func signInButtonTapped() {
-         print(#function)
+         dismiss(animated: true) {
+             self.delegate?.toSignInVC()
+         }
      }
  }
 

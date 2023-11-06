@@ -29,6 +29,8 @@ class SignInViewController: UIViewController {
         return button
     }()
     
+    weak var delegate: AuthNavigationDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,7 +48,9 @@ class SignInViewController: UIViewController {
     }
     
     @objc private func loginButtonTapped() {
-        print(#function)
+        dismiss(animated: true) {
+            self.delegate?.toLoginVC()
+        }
     }
 
 }

@@ -32,6 +32,9 @@ class AuthViewController: UIViewController {
                                backgroundColor: .blueColor(),
                                isShadow: true)
     
+    let signInVC = SignInViewController()
+    let logincVC = LoginViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,15 +43,18 @@ class AuthViewController: UIViewController {
         
         emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        
+        signInVC.delegate =  self
+        logincVC.delegate = self
 
     }
     
     @objc private func emailButtonTapped() {
-        print(#function)
+        present(signInVC, animated: true, completion: nil)
     }
     
     @objc private func loginButtonTapped() {
-        print(#function)
+       present(logincVC, animated: true, completion: nil)
     }
 }
     
@@ -94,4 +100,17 @@ extension AuthViewController {
     }
 }
 
+//MARK: - AuthNavigationDelegate
 
+extension AuthViewController: AuthNavigationDelegate {
+    
+    func toLoginVC() {
+        present(logincVC, animated: true, completion: nil)
+    }
+    
+    func toSignInVC() {
+        present(signInVC, animated: true, completion: nil)
+    }
+    
+    
+}

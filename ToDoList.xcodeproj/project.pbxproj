@@ -20,6 +20,8 @@
 		4827FEEB2AF92F9D00753020 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEEA2AF92F9D00753020 /* UIButton + Extension.swift */; };
 		4827FEED2AF933A200753020 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEEC2AF933A200753020 /* ButtonFormView.swift */; };
 		4827FEF22AF9342900753020 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF12AF9342900753020 /* UIStackView + Extension.swift */; };
+		4827FEF52AF936E700753020 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF42AF936E700753020 /* SignInViewController.swift */; };
+		4827FEF72AF9374000753020 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF62AF9374000753020 /* OneLineTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		4827FEEA2AF92F9D00753020 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		4827FEEC2AF933A200753020 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		4827FEF12AF9342900753020 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		4827FEF42AF936E700753020 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4827FEF62AF9374000753020 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,7 @@
 			children = (
 				4827FECD2AF928E800753020 /* AppDelegate.swift */,
 				4827FECF2AF928E800753020 /* SceneDelegate.swift */,
-				4827FED12AF928E800753020 /* AuthViewController.swift */,
+				4827FEF32AF9369A00753020 /* SignIn&Auth */,
 				4827FEEE2AF933C400753020 /* Extensions */,
 				4827FED32AF928E800753020 /* Main.storyboard */,
 				4827FED62AF928EA00753020 /* Assets.xcassets */,
@@ -99,9 +103,19 @@
 			isa = PBXGroup;
 			children = (
 				4827FEEC2AF933A200753020 /* ButtonFormView.swift */,
+				4827FEF62AF9374000753020 /* OneLineTextField.swift */,
 				4827FEE72AF92EFA00753020 /* UIKit */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4827FEF32AF9369A00753020 /* SignIn&Auth */ = {
+			isa = PBXGroup;
+			children = (
+				4827FED12AF928E800753020 /* AuthViewController.swift */,
+				4827FEF42AF936E700753020 /* SignInViewController.swift */,
+			);
+			path = "SignIn&Auth";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4827FEF72AF9374000753020 /* OneLineTextField.swift in Sources */,
+				4827FEF52AF936E700753020 /* SignInViewController.swift in Sources */,
 				4827FEE42AF92CF700753020 /* UIFont + Extension.swift in Sources */,
 				4827FED22AF928E800753020 /* AuthViewController.swift in Sources */,
 				4827FEE92AF92F5000753020 /* UIImageView + Extension.swift in Sources */,

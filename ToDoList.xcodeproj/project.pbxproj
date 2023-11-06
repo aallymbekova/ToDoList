@@ -22,6 +22,7 @@
 		4827FEF22AF9342900753020 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF12AF9342900753020 /* UIStackView + Extension.swift */; };
 		4827FEF52AF936E700753020 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF42AF936E700753020 /* SignInViewController.swift */; };
 		4827FEF72AF9374000753020 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF62AF9374000753020 /* OneLineTextField.swift */; };
+		4827FEF92AF937E200753020 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF82AF937E200753020 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4827FEF12AF9342900753020 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
 		4827FEF42AF936E700753020 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		4827FEF62AF9374000753020 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		4827FEF82AF937E200753020 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				4827FED12AF928E800753020 /* AuthViewController.swift */,
 				4827FEF42AF936E700753020 /* SignInViewController.swift */,
+				4827FEF82AF937E200753020 /* LoginViewController.swift */,
 			);
 			path = "SignIn&Auth";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				4827FEE62AF92E2100753020 /* UIColor + Extension.swift in Sources */,
 				4827FEE22AF92CC600753020 /* UILabel + Extension.swift in Sources */,
 				4827FED02AF928E800753020 /* SceneDelegate.swift in Sources */,
+				4827FEF92AF937E200753020 /* LoginViewController.swift in Sources */,
 				4827FEEB2AF92F9D00753020 /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

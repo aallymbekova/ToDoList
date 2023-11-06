@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		4827FECE2AF928E800753020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FECD2AF928E800753020 /* AppDelegate.swift */; };
 		4827FED02AF928E800753020 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FECF2AF928E800753020 /* SceneDelegate.swift */; };
-		4827FED22AF928E800753020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FED12AF928E800753020 /* ViewController.swift */; };
+		4827FED22AF928E800753020 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FED12AF928E800753020 /* AuthViewController.swift */; };
 		4827FED52AF928E800753020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4827FED32AF928E800753020 /* Main.storyboard */; };
 		4827FED72AF928EA00753020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4827FED62AF928EA00753020 /* Assets.xcassets */; };
 		4827FEDA2AF928EA00753020 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4827FED82AF928EA00753020 /* LaunchScreen.storyboard */; };
+		4827FEE22AF92CC600753020 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEE12AF92CC500753020 /* UILabel + Extension.swift */; };
+		4827FEE42AF92CF700753020 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEE32AF92CF700753020 /* UIFont + Extension.swift */; };
+		4827FEE62AF92E2100753020 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEE52AF92E2100753020 /* UIColor + Extension.swift */; };
+		4827FEE92AF92F5000753020 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEE82AF92F5000753020 /* UIImageView + Extension.swift */; };
+		4827FEEB2AF92F9D00753020 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEEA2AF92F9D00753020 /* UIButton + Extension.swift */; };
+		4827FEED2AF933A200753020 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEEC2AF933A200753020 /* ButtonFormView.swift */; };
+		4827FEF22AF9342900753020 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEF12AF9342900753020 /* UIStackView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4827FECA2AF928E800753020 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4827FECD2AF928E800753020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4827FECF2AF928E800753020 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4827FED12AF928E800753020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4827FED12AF928E800753020 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		4827FED42AF928E800753020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4827FED62AF928EA00753020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4827FED92AF928EA00753020 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4827FEDB2AF928EA00753020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4827FEE12AF92CC500753020 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		4827FEE32AF92CF700753020 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		4827FEE52AF92E2100753020 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		4827FEE82AF92F5000753020 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		4827FEEA2AF92F9D00753020 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		4827FEEC2AF933A200753020 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		4827FEF12AF9342900753020 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,36 @@
 			children = (
 				4827FECD2AF928E800753020 /* AppDelegate.swift */,
 				4827FECF2AF928E800753020 /* SceneDelegate.swift */,
-				4827FED12AF928E800753020 /* ViewController.swift */,
+				4827FED12AF928E800753020 /* AuthViewController.swift */,
+				4827FEEE2AF933C400753020 /* Extensions */,
 				4827FED32AF928E800753020 /* Main.storyboard */,
 				4827FED62AF928EA00753020 /* Assets.xcassets */,
 				4827FED82AF928EA00753020 /* LaunchScreen.storyboard */,
 				4827FEDB2AF928EA00753020 /* Info.plist */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		4827FEE72AF92EFA00753020 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4827FEE12AF92CC500753020 /* UILabel + Extension.swift */,
+				4827FEF12AF9342900753020 /* UIStackView + Extension.swift */,
+				4827FEEA2AF92F9D00753020 /* UIButton + Extension.swift */,
+				4827FEE52AF92E2100753020 /* UIColor + Extension.swift */,
+				4827FEE32AF92CF700753020 /* UIFont + Extension.swift */,
+				4827FEE82AF92F5000753020 /* UIImageView + Extension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4827FEEE2AF933C400753020 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4827FEEC2AF933A200753020 /* ButtonFormView.swift */,
+				4827FEE72AF92EFA00753020 /* UIKit */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4827FED22AF928E800753020 /* ViewController.swift in Sources */,
+				4827FEE42AF92CF700753020 /* UIFont + Extension.swift in Sources */,
+				4827FED22AF928E800753020 /* AuthViewController.swift in Sources */,
+				4827FEE92AF92F5000753020 /* UIImageView + Extension.swift in Sources */,
+				4827FEF22AF9342900753020 /* UIStackView + Extension.swift in Sources */,
+				4827FEED2AF933A200753020 /* ButtonFormView.swift in Sources */,
 				4827FECE2AF928E800753020 /* AppDelegate.swift in Sources */,
+				4827FEE62AF92E2100753020 /* UIColor + Extension.swift in Sources */,
+				4827FEE22AF92CC600753020 /* UILabel + Extension.swift in Sources */,
 				4827FED02AF928E800753020 /* SceneDelegate.swift in Sources */,
+				4827FEEB2AF92F9D00753020 /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

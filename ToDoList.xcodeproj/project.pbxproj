@@ -47,6 +47,10 @@
 		4827FF2F2AF9502300753020 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF2E2AF9502300753020 /* Validators.swift */; };
 		4827FF312AF9504A00753020 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF302AF9504A00753020 /* AuthError.swift */; };
 		4827FF342AF953E000753020 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF332AF953E000753020 /* AppUser.swift */; };
+		4827FF362AF95BE500753020 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF352AF95BE500753020 /* FirestoreService.swift */; };
+		4827FF382AF95C2F00753020 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF372AF95C2F00753020 /* UserError.swift */; };
+		4827FF3A2AF95C6600753020 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF392AF95C6600753020 /* StorageService.swift */; };
+		4827FF3C2AF95D8D00753020 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF3B2AF95D8D00753020 /* UIImage + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +87,10 @@
 		4827FF2E2AF9502300753020 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		4827FF302AF9504A00753020 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		4827FF332AF953E000753020 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		4827FF352AF95BE500753020 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		4827FF372AF95C2F00753020 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
+		4827FF392AF95C6600753020 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		4827FF3B2AF95D8D00753020 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +158,7 @@
 				4827FEE52AF92E2100753020 /* UIColor + Extension.swift */,
 				4827FEE32AF92CF700753020 /* UIFont + Extension.swift */,
 				4827FEE82AF92F5000753020 /* UIImageView + Extension.swift */,
+				4827FF3B2AF95D8D00753020 /* UIImage + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -211,6 +220,8 @@
 			children = (
 				4827FF322AF953AD00753020 /* Model */,
 				4827FF142AF94C3700753020 /* AuthService.swift */,
+				4827FF352AF95BE500753020 /* FirestoreService.swift */,
+				4827FF392AF95C6600753020 /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -220,6 +231,7 @@
 			children = (
 				4827FF2E2AF9502300753020 /* Validators.swift */,
 				4827FF302AF9504A00753020 /* AuthError.swift */,
+				4827FF372AF95C2F00753020 /* UserError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -318,10 +330,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4827FF342AF953E000753020 /* AppUser.swift in Sources */,
+				4827FF3A2AF95C6600753020 /* StorageService.swift in Sources */,
 				4827FEF72AF9374000753020 /* OneLineTextField.swift in Sources */,
 				4827FEF52AF936E700753020 /* SignInViewController.swift in Sources */,
 				4827FEE42AF92CF700753020 /* UIFont + Extension.swift in Sources */,
 				4827FED22AF928E800753020 /* AuthViewController.swift in Sources */,
+				4827FF362AF95BE500753020 /* FirestoreService.swift in Sources */,
 				4827FF0B2AF9406F00753020 /* TabBarViewController.swift in Sources */,
 				4827FF062AF93C4700753020 /* Constraints.swift in Sources */,
 				4827FEFB2AF938A700753020 /* SetupProfileViewController.swift in Sources */,
@@ -339,10 +353,12 @@
 				4827FEE22AF92CC600753020 /* UILabel + Extension.swift in Sources */,
 				4827FEFF2AF9396300753020 /* AddPhotoView.swift in Sources */,
 				4827FED02AF928E800753020 /* SceneDelegate.swift in Sources */,
+				4827FF382AF95C2F00753020 /* UserError.swift in Sources */,
 				4827FEF92AF937E200753020 /* LoginViewController.swift in Sources */,
 				4827FF0D2AF940A300753020 /* NewTaskViewController.swift in Sources */,
 				4827FF0F2AF9433700753020 /* InsertabletextField.swift in Sources */,
 				4827FEFD2AF9392500753020 /* UISegmentedControll + Extension.swift in Sources */,
+				4827FF3C2AF95D8D00753020 /* UIImage + Extension.swift in Sources */,
 				4827FF022AF93B2E00753020 /* TaskListViewController.swift in Sources */,
 				4827FEEB2AF92F9D00753020 /* UIButton + Extension.swift in Sources */,
 			);

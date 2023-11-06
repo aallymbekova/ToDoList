@@ -48,11 +48,43 @@ class SetupProfileViewController: UIViewController {
     }
     
     @objc private func plusButtonTapped() {
-        print(#function)
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true, completion: nil)
     }
     
     @objc private func goToListButtonTapped() {
-        print(#function)
+        FirestoreService.shared.saveProfileWith(id: currentUser.uid,
+                                                email: currentUser.email!,
+                                                userName: fullNameTextField.text,
+                                                avatarImage: fullImageView.circleImageView.image,
+                                                description: aboutMeTextField.text,
+                                                gender: genderSegmentedControl.titleForSegment(at: genderSegmentedControl.selectedSegmentIndex)) { result in
+            switch result {
+            case .success(let appuser):
+                self.showAlert(with: "Successfully", and: "") {
+                    let tabBar = TabBarController(currentUser: appuser)
+                    tabBar.modalPresentationStyle = .fullScreen
+                    self.present(tabBar, animated: true, completion: nil)
+                }
+                
+            case .failure(let error):
+                self.showAlert(with: "Error", and: error.localizedDescription)
+            }
+        }
+    }
+}
+
+//MARK: - UIImagePickerControllerDelegate
+extension SetupProfileViewController: UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        picker.dismiss(animated: true, completion: nil)
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            return
+        }
+        fullImageView.circleImageView.image = image
     }
 }
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NewTaskViewController: UIViewController {
 
@@ -17,7 +18,19 @@ class NewTaskViewController: UIViewController {
                                  isShadow: true,
                                  cornerRadius: 2)
     
-   
+    private let currentUser: AppUser
+
+    init(currentUser: AppUser) {
+        self.currentUser = currentUser
+        super.init(nibName: nil, bundle: nil)
+        title = currentUser.userName
+        
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -45,12 +58,26 @@ class NewTaskViewController: UIViewController {
 extension NewTaskViewController {
     
     @objc private func addTaskButtonTapped() {
-        print(#function)
+        guard let textField = textField.text, textField != "" else { return }
+        PostService.shared.newTaks(text: textField) {[weak self] error, ref in
+            self?.tabBarController?.selectedIndex = 0
+            self?.textField.text = ""
+        }
 
     }
 
     @objc private func signOutRightButtonTapped() {
-        print(#function)
+        let ac = UIAlertController(title: nil, message: "Are you sure you want to sign out", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        ac.addAction(UIAlertAction(title: "Sign Out", style: .destructive, handler: { _ in
+            do {
+                try Auth.auth().signOut()
+                UIApplication.shared.keyWindow?.rootViewController = AuthViewController()
+            } catch {
+                print("Error signin out: \(error.localizedDescription)")
+            }
+        }))
+        present(ac, animated: true, completion: nil)
     }
 }
 
@@ -81,4 +108,3 @@ extension NewTaskViewController {
     }
 
 }
-

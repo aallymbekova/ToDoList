@@ -23,8 +23,8 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let taskListVC = TaskListViewController()
-        let newTaskVC = NewTaskViewController()
+        let taskListVC = TaskListViewController(currentUser: currentUser)
+        let newTaskVC = NewTaskViewController(currentUser: currentUser)
         
         tabBar.tintColor = .darkColor()
         let taskListImage = UIImage(systemName: "doc.fill")!

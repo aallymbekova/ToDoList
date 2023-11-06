@@ -26,6 +26,13 @@
 		4827FEFB2AF938A700753020 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEFA2AF938A700753020 /* SetupProfileViewController.swift */; };
 		4827FEFD2AF9392500753020 /* UISegmentedControll + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEFC2AF9392500753020 /* UISegmentedControll + Extension.swift */; };
 		4827FEFF2AF9396300753020 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FEFE2AF9396300753020 /* AddPhotoView.swift */; };
+		4827FF022AF93B2E00753020 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF012AF93B2E00753020 /* TaskListViewController.swift */; };
+		4827FF042AF93C1C00753020 /* TaskListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF032AF93C1C00753020 /* TaskListViewCell.swift */; };
+		4827FF062AF93C4700753020 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF052AF93C4700753020 /* Constraints.swift */; };
+		4827FF082AF93C7100753020 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF072AF93C7100753020 /* UIViewController + Extension.swift */; };
+		4827FF0B2AF9406F00753020 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF0A2AF9406F00753020 /* TabBarViewController.swift */; };
+		4827FF0D2AF940A300753020 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF0C2AF940A300753020 /* NewTaskViewController.swift */; };
+		4827FF0F2AF9433700753020 /* InsertabletextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4827FF0E2AF9433700753020 /* InsertabletextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,13 @@
 		4827FEFA2AF938A700753020 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		4827FEFC2AF9392500753020 /* UISegmentedControll + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControll + Extension.swift"; sourceTree = "<group>"; };
 		4827FEFE2AF9396300753020 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		4827FF012AF93B2E00753020 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		4827FF032AF93C1C00753020 /* TaskListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewCell.swift; sourceTree = "<group>"; };
+		4827FF052AF93C4700753020 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		4827FF072AF93C7100753020 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		4827FF0A2AF9406F00753020 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4827FF0C2AF940A300753020 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
+		4827FF0E2AF9433700753020 /* InsertabletextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertabletextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +99,7 @@
 				4827FECD2AF928E800753020 /* AppDelegate.swift */,
 				4827FECF2AF928E800753020 /* SceneDelegate.swift */,
 				4827FEF32AF9369A00753020 /* SignIn&Auth */,
+				4827FF002AF93B0C00753020 /* Controllers */,
 				4827FEEE2AF933C400753020 /* Extensions */,
 				4827FED32AF928E800753020 /* Main.storyboard */,
 				4827FED62AF928EA00753020 /* Assets.xcassets */,
@@ -114,6 +129,9 @@
 				4827FEEC2AF933A200753020 /* ButtonFormView.swift */,
 				4827FEF62AF9374000753020 /* OneLineTextField.swift */,
 				4827FEFE2AF9396300753020 /* AddPhotoView.swift */,
+				4827FF052AF93C4700753020 /* Constraints.swift */,
+				4827FF072AF93C7100753020 /* UIViewController + Extension.swift */,
+				4827FF0E2AF9433700753020 /* InsertabletextField.swift */,
 				4827FEE72AF92EFA00753020 /* UIKit */,
 			);
 			path = Extensions;
@@ -128,6 +146,25 @@
 				4827FEFA2AF938A700753020 /* SetupProfileViewController.swift */,
 			);
 			path = "SignIn&Auth";
+			sourceTree = "<group>";
+		};
+		4827FF002AF93B0C00753020 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4827FF0A2AF9406F00753020 /* TabBarViewController.swift */,
+				4827FF012AF93B2E00753020 /* TaskListViewController.swift */,
+				4827FF0C2AF940A300753020 /* NewTaskViewController.swift */,
+				4827FF092AF9405C00753020 /* Cell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4827FF092AF9405C00753020 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4827FF032AF93C1C00753020 /* TaskListViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +242,11 @@
 				4827FEF52AF936E700753020 /* SignInViewController.swift in Sources */,
 				4827FEE42AF92CF700753020 /* UIFont + Extension.swift in Sources */,
 				4827FED22AF928E800753020 /* AuthViewController.swift in Sources */,
+				4827FF0B2AF9406F00753020 /* TabBarViewController.swift in Sources */,
+				4827FF062AF93C4700753020 /* Constraints.swift in Sources */,
 				4827FEFB2AF938A700753020 /* SetupProfileViewController.swift in Sources */,
+				4827FF082AF93C7100753020 /* UIViewController + Extension.swift in Sources */,
+				4827FF042AF93C1C00753020 /* TaskListViewCell.swift in Sources */,
 				4827FEE92AF92F5000753020 /* UIImageView + Extension.swift in Sources */,
 				4827FEF22AF9342900753020 /* UIStackView + Extension.swift in Sources */,
 				4827FEED2AF933A200753020 /* ButtonFormView.swift in Sources */,
@@ -215,7 +256,10 @@
 				4827FEFF2AF9396300753020 /* AddPhotoView.swift in Sources */,
 				4827FED02AF928E800753020 /* SceneDelegate.swift in Sources */,
 				4827FEF92AF937E200753020 /* LoginViewController.swift in Sources */,
+				4827FF0D2AF940A300753020 /* NewTaskViewController.swift in Sources */,
+				4827FF0F2AF9433700753020 /* InsertabletextField.swift in Sources */,
 				4827FEFD2AF9392500753020 /* UISegmentedControll + Extension.swift in Sources */,
+				4827FF022AF93B2E00753020 /* TaskListViewController.swift in Sources */,
 				4827FEEB2AF92F9D00753020 /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

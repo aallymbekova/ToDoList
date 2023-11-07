@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,12 +15,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-             
-             window = UIWindow(windowScene: windowScene)
-             window?.windowScene = windowScene
-             window?.makeKeyAndVisible()
-             window?.rootViewController = ViewController()
+         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+         window?.windowScene = windowScene
         
+        if let user = Auth.auth().currentUser {
+            FirestoreService.shared.getUserData(user: user) { result in
+                switch result {
+                case .success(let appuser):
+                    let tabBar = TabBarController(currentUser: appuser)
+                    tabBar.modalPresentationStyle = .fullScreen
+                    self.window?.rootViewController = tabBar
+                case .failure(_):
+                    self.window?.rootViewController = AuthViewController()
+                }
+            }
+        } else {
+            self.window?.rootViewController = AuthViewController()
+        }
+        
+         window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
